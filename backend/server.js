@@ -27,12 +27,12 @@ connectDatabase();
   });
 
 
-// Unhandeled Promise Rejection
-process.on("unhandledRejection", (err)=>{
-  console.log('Error:  ${err.message}');
-  console.log('Shutting down the server due to Unhandelled Promise Rejection');
+// // Unhandeled Promise Rejection
+// process.on("unhandledRejection", (err)=>{
+//   console.log('Error:  ${err.message}');
+//   console.log('Shutting down the server due to Unhandelled Promise Rejection');
 
-  server.close(()=>{
-    process.exit(1);
-  })
-});
+//   server.close(()=>{
+//     process.exit(1);
+//   })
+//});
